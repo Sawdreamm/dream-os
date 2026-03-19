@@ -1,0 +1,45 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;900&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --nb:   #C4E8F4;
+  --nb-d: #7BC8DF;
+  --nb-t: #E8F7FC;
+  --nc:   #2E1A0E;
+  --nc-m: #5C3D26;
+  --nc-l: #A07850;
+  --ny:   #FDFACC;
+  --ny-d: #F5EF8A;
+  --bg:   #F4FAFE;
+}
+
+* {
+  box-sizing: border-box;
+  -webkit-tap-highlight-color: transparent;
+}
+
+html,
+body {
+  font-family: 'Outfit', sans-serif;
+  background: var(--bg);
+  color: var(--nc);
+  overscroll-behavior: none;
+}
+
+::-webkit-scrollbar {
+  width: 3px;
+  height: 3px;
+}
+::-webkit-scrollbar-thumb {
+  background: var(--nb);
+  border-radius: 3px;
+}
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+/* Hide scrollbar but keep scrolling */
+.no-scrollbar::-webkit-scrollbar { display: none; }
+.no-scrollbar { -ms-overflow-style: none; scrollbar-width: none; }
